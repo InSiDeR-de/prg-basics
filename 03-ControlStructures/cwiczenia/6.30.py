@@ -1,8 +1,19 @@
-i=1
-for i in range(1, 8):
-    print([i, i+7, i+14, i+21, i+28, i+35, i+42])
-    i+=1
+def f(a):
+    licznik = int(a**0.5)
 
+    i=1
+
+    result =""
+    for i in range(1, licznik+1):
+        z=1
+        for z in range(1, licznik+1):
+            result +=f"{i*z} "           
+            z+=1
+        print(result)
+        result=""
+        i+=1
+if __name__ == "__main__":
+    print(f(64))
 
 
 
