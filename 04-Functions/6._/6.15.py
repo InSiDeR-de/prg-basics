@@ -6,8 +6,10 @@ def f(detector):
             inn+=1
         else:
             out +=1
-    return 
-
+    if inn-out/3  >3:
+        return True
+    else:
+        return False
 
     
 
@@ -17,3 +19,4 @@ if __name__ == "__main__":
     print(f("+-+++-+---"))
     print(f("+-+-+-+-"))
     print(f("+-++-+--"))
+    print(f("+-++-++-+---"))
